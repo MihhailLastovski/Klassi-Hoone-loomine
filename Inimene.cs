@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Klassi_Hoone_loomine
 {
-    public class Inimene
+    public class Inimene:Hoone
     {
         private string nimi;
         public Hoone hoone { get; set; }
@@ -16,7 +16,7 @@ namespace Klassi_Hoone_loomine
             this.nimi = nimi;
         }
 
-        public void NaitaInfo()
+        public override void NaitaInfo()
         {
             Console.WriteLine($"Mina olen inimene, minu nimi on {nimi}");
             Console.WriteLine("Hoone info:");

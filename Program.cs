@@ -14,7 +14,7 @@ namespace Klassi_Hoone_loomine
             EraMaja majake2 = new EraMaja(50, 4, true, 5, "jah");
             EraMaja majake3 = new EraMaja(70, 6, false);
             Inimene mees = new Inimene("Juku");
-            Inimene mees2 = new Inimene("Mark");
+            Inimene mees2 = new Inimene("Marco");
             Inimene naine = new Inimene("Maša");
             majake2.uks = new Uks("punane");
             majake3.uks = new Uks("sinine");

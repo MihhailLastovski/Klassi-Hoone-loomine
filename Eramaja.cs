@@ -21,26 +21,26 @@ namespace Klassi_Hoone_loomine
         {
             this.tara = tara;
         }
-        public double Suurus
+        public string Suurus
         {
             set 
             {
  
                 if (Pindala<=30)
                 {
-                    Answer = "vaike maja";
+                    Suurus = "vaike maja";
                 }
                 else if (Pindala<=50)
                 {
-                    Answer = "keskmine maja";
+                    Suurus = "keskmine maja";
                 }
                 else if (Pindala<=80)
                 {
-                    Answer = "suur maja";
+                    Suurus = "suur maja";
                 }
                 else
                 {
-                    Answer = "liiga suur maja";
+                    Suurus = "liiga suur maja";
                 }
                 
             }
@@ -49,12 +49,12 @@ namespace Klassi_Hoone_loomine
         {
             if (Korsten == true && tara == "jah" && saitpindala == 0)
             {
-                Console.WriteLine($"Mina olen maja, minu pindala on {Pindala} m2, mul on {Akenarv} akent, mul on kortsen, mul on tara, mul on {Korterarv} korterit");
+                Console.WriteLine($"Mina olen maja, minu pindala on {Pindala} m2, mul on {Akenarv} akent, mul on kortsen, mul on tara, mul on {Korterarv} korterit.");
 
             }
             else if (Korsten == true && tara =="ei" && saitpindala == 0)
             {
-                Console.WriteLine($"Mina olen maja, minu pindala on {Pindala} m2, mul on {Akenarv} akent, mul on kortsen, mul on {Korterarv} korterit. Ma olen {Answer}");
+                Console.WriteLine($"Mina olen maja, minu pindala on {Pindala} m2, mul on {Akenarv} akent, mul on kortsen, mul on {Korterarv} korterit");
             }
             else if (Korsten == false && tara == "jah" && saitpindala == 0)
             {

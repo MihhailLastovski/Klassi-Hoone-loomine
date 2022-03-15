@@ -12,13 +12,13 @@ namespace Klassi_Hoone_loomine
         public int Akenarv { get; set; }
         public bool Korsten { get; set; }
         public int Korterarv { get; set; }
-        public string Answer { get; set; }
-
+        public bool Kelder { get; set; }
 
         public Uks uks;
         public Hoone(int pindala = 200)
         {
             Pindala = pindala;
+
         }
         public Hoone(int pindala, int akenarv, bool korsten)
         {
@@ -32,6 +32,11 @@ namespace Klassi_Hoone_loomine
             Akenarv = akenarv;
             Korsten = korsten;
             Korterarv = korterarv;
+        }
+        public Hoone(int pindala, bool kelder)
+        {
+            Pindala= pindala;
+            Kelder= kelder;
         }
         public Uks GetUks()
         {
